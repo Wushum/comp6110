@@ -1,0 +1,50 @@
+
+<html>
+<title>Teller Login</title>
+
+<head>
+
+<h1>Teller Interface</h1><br/>
+
+<script>
+function Validate(){
+var name = document.forms["myForm"]["fullname"].value;
+var pin = document.forms["myForm"]["psw"].value;
+
+if(name == "Jane Doe" && pin == 1001){
+	alert ("Welcome  " + name);
+		window.location = "view.html";
+	}
+	else if(name == null || name == "" || pin == null || pin == "")
+	{
+		alert("Both fields require an input");
+	}
+		else 
+	{
+		alert("Name and PIN did not match, Try Again!");
+	}
+}
+
+
+
+</script>
+<link rel="stylesheet" href="work.css">
+</head>
+<body>
+<style>
+
+
+</style>
+<form name = "myForm">
+<label>Enter Your Full Name</label>
+<input type = "text" name = "fullname"  >
+<label>Enter your PIN</label>
+<input type = "password" name = "psw" ><br><br>
+
+
+
+</form>
+<button id = "bgnBt" onclick="Validate()">Submit</button>
+
+</body>
+</html>
