@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <h1>CUSTOMER DATA</h1>
+		
+        <%for (var index in this.data) {%> 
+        <p>Customer Firstname: <%this.data[index].firstname%> <br/></p>
+        <p>Customer Lastname: <%this.data[index].lastname%><br/> 
+		<p>Account No: <%this.data[index].account_no%><br/></p>
+		<p>Address: <%this.data[index].address%><br/></p>
+		<p>TRN: <%this.data[index].trn%> <br/></p>
+		<p>Email: <%this.data[index].email_address%> <br/></p>
+		<p>Status: <%this.data[index].status%> <br/></p>
+		<p>Phone no: <%this.data[index].phone_no %><br/></p>
+		<p>Secret: <%this.data[index].secret_key%><br/> </p>
+		<hr><hr>
+            <%}%>
+        </p>
+    </body>
+</html>
