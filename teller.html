@@ -1,25 +1,40 @@
 <html>
 <title>TELLER</title>
-<head></head>
+<head>
+<!-- //<script src = "app.js" > </script> -->
+</head>
 <body>
 
 <p><b>Clients Form</b></p>
-<script>
 
-</script>
 
-<form action = modify.html method = "POST">
-<label>Enter Customer First Name</label>  <br>
+<form method = "POST" action = "/modify">
+<label>Customer First Name</label>  <br>
 <input type = "text" name = "firstname" placeholder = "firstname"><br><br>
 
-<label>Enter Customer Last Name</label>  <br>
+<label>Customer Last Name</label>  <br>
 <input type = "text" name = "lastname" placeholder = "lastname"> <br><br>
 
-<label>Enter Customer Account #</label> <br>
-<input type = "text" name = "account" placeholder = "Account #"> <br><br>
+<label>Customer Account #</label> <br>
+<input type = "text" name = "account_no" placeholder = "Account #"> <br><br>
 
-<label>Enter Customer Address</label> <br>
+<label>Customer Address</label> <br>
 <input type = "text" name = "address" placeholder = "address"> <br><br>
+
+<label>Customer TRN#</label> <br>
+<input type = "text" name = "trn" placeholder = "TRN"> <br><br>
+
+<label>Customer Email Address</label> <br>
+<input type = "text" name = "email_address" placeholder = "Email"> <br><br>
+
+<label>Account Status</label> <br>
+<input type = "text" name = "status" placeholder = "status"> <br><br>
+
+<label>Customer Phone#</label> <br>
+<input type = "text" name = "phone_no" placeholder = "Phone #"> <br><br>
+
+<label>Customer Secret Key</label> <br>
+<input type = "password" name = "secret_key" placeholder = "secret"> <br><br>
 
     <!--<select>-->
     <!--    <option>Active</option>-->
@@ -28,8 +43,7 @@
 
 <!--<label>Enter Customer Statusr</label>  <br>-->
 <!--<input type = "text" name = "status" placeholder = "status"> <br><br>-->
-
-<button id = "sub" onclick = "Validate()">Create Customer</button>
+<button id = "sub">Create Customer</button>
 
 <!--How to Generate secrey key-->
 <!--<label>Enter Customer Secret Key</label>Secret Key  -->
