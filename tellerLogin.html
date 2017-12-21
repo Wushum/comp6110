@@ -11,7 +11,7 @@ function Validate(){
 var name = document.forms["myForm"]["fullname"].value;
 var pin = document.forms["myForm"]["psw"].value;
 
-if(name == "Jane Doe" && pin == 1001){
+if(name == "Alice Davis" && pin == 1234){
 	alert ("Welcome  " + name);
 		window.location = "view.html";
 	}
@@ -35,7 +35,7 @@ if(name == "Jane Doe" && pin == 1001){
 
 
 </style>
-<form name = "myForm">
+<form name = "myForm" action = "modify.html" method = "GET">
 <label>Enter Your Full Name</label>
 <input type = "text" name = "fullname"  >
 <label>Enter your PIN</label>
